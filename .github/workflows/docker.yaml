@@ -136,9 +136,10 @@ jobs:
                   name_space_prefix="${name_space}_"
                fi
             fi
-            
+
+            image_name_tag="${image_name_tag//:/-}"
             # 将@sha256:等字符删除
-            image_name_tag="${image_name_tag//:/-%%@*}"
+            image_name_tag="${image_name_tag%%@*}"
             new_image="$platform_prefix$name_space_prefix$image_name_tag"
             echo "docker tag $image $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$ALIYUN_REPOSITORY/$new_image"
             docker tag $image $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$ALIYUN_REPOSITORY/$new_image
