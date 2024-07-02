@@ -149,7 +149,7 @@ jobs:
             df -hT
             echo "=============================================================================="
             docker rmi $image
-            docker rmi $new_image
+            docker rmi $ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$ALIYUN_REPOSITORY:$new_image
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
             df -hT
