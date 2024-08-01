@@ -6,3 +6,4 @@
 --platform=linux/arm64 xiaoyaliu/alist
 openjdk:8-jdk-alpine
 findepi/graalvm:java17-native
+bellsoft/liberica-openjdk-debian:17.0.11-cds
