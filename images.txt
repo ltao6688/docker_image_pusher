@@ -7,3 +7,8 @@
 openjdk:8-jdk-alpine
 findepi/graalvm:java17-native
 bellsoft/liberica-openjdk-debian:17.0.11-cds
+mysql:8.0.33
+nginx:1.23.4
+redis:6.2.12
+minio/minio:RELEASE.2023-04-13T03-08-07Z
+mcr.microsoft.com/mssql/server:2017-latest
